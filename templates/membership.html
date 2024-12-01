@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h2 class="fitlab">FITLAB</h2>
+        <nav>
+            <a href="{{ url_for('home') }}">
+                <button>Home</button>
+            </a>
+            <a href="{{ url_for('about') }}">
+                <button>About Us</button>
+            </a>
+            <a href="{{ url_for('membership') }}">
+                <button style="background-color: #616161;">Membership</button>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Become a Member</h1>
+        <p style="font-size: 20px;">Join us today to enjoy exclusive benefits and perks. Sign up for our membership program!</p>
+        <br>
+        <div class="forms">
+            <form action="/submit-form" method="post">
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="name..." required>
+                <br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email..." required>
+                <br><br>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="contact no..." required>
+                <br><br>
+        
+                <label for="gender">Gender:</label>
+                <label for="male" class="genders">Male</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="female" class="genders">Female</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <br><br>
+                <label for="workout">Preferred Workout Type:</label>
+                <select id="workout" name="workout" required>
+                    <option value="strength">Strength Training</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="crossfit">CrossFit</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </main>
+     <footer>
+        <p>&copy; 2024 Our Company</p>
+    </footer>
+</body>
+</html>

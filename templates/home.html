@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h2 class="fitlab">FITLAB</h2>
+        <nav>
+            <a href="{{ url_for('home') }}">
+                <button style="background-color: #616161;">Home</button>
+            </a>
+            <a href="{{ url_for('about') }}">
+                <button>About Us</button>
+            </a>
+            <a href="{{ url_for('membership') }}">
+                <button>Membership</button>
+            </a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="homecontent">
+            <h1>Welcome to FitLab official Website</h1>
+            <br><br><br><br><br><br>
+            <h3 style="font-size: 50px;">RISE</h3>
+            <h2 style="font-size: 60px;">GRIND</h2>
+            <h2 style="color: #ffd200 ;font-size: 70px;">REPEAT!</h2>
+            <h2>Unlock your true potential with us</h2>
+            <br>
+            <section id="pricing" class="pricing">
+                <div class="container">
+                    <h2>Membership Options</h2>
+                    <div class="pricing-plans">
+                        <div class="plan">
+                            <h3 style="color: #5dade2;">Basic</h3>
+                            <p>$30/month</p>
+                            <a href="{{ url_for('membership') }}" class="cta-button" >Sign Up</a>
+                        </div>
+                        <div class="plan">
+                            <h3 style="color: #ffd700;">Premium</h3>
+                            <p>$50/month</p>
+                            <a href="{{ url_for('membership') }}" class="cta-button">Sign Up</a>
+                        </div>
+                        <div class="plan">
+                            <h3 style="color: #670039;">VIP</h3>
+                            <p>80$/month</p>
+                            <a href="{{ url_for('membership') }}" class="cta-button">Sign Up</a>
+                        </div>   
+                    </div>
+                </div>
+            </section>
+        </div>
+   
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Company</p>
+    </footer>
+</body>
+</html>

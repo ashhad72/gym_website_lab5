@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <header>
+        <h2 class="fitlab">FITLAB</h2>
+        <nav>
+            <a href="{{ url_for('home') }}">
+                <button>Home</button>
+            </a>
+            <a href="{{ url_for('about') }}">
+                <button style="background-color: #616161;">About Us</button>
+            </a>
+            <a href="{{ url_for('membership') }}">
+                <button>Membership</button>
+            </a>
+         
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about">
+            <h1>About Us</h1>
+            <p style="font-size: 20px;">We are a company committed to delivering top-notch services and building long-term relationships with our customers.</p>
+            <p style="font-size: 20px;">At FitLab, we’re committed to creating a clean, energizing environment where you can push your limits and reach new heights.</p>
+            <br><br><br>
+            <section id="programs" class="programs">
+                <h2 style="font-size: 30px;">Our Fitness Programs</h2>
+                <p style="font-size: 20px;">From strength training to yoga, we offer variety of different programs designed to challenge and inspire You.</p>
+                <br><br>
+                <div class="programs-list">
+                    <div class="program">
+                        <h3 >Personal Training</h3>
+                        <p>Get one-on-one sessions with our expert trainers.</p>
+                    </div>
+                    <div class="program">
+                        <h3>HIIT Classes</h3>
+                        <p>Burn calories fast with high intensity interval training.</p>
+                    </div>
+                    <div class="program">
+                        <h3>Yoga & Pilates</h3>
+                        <p>Stretch and strengthen your body with our mindful classes.</p>
+                    </div>
+                </div>
+            <section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Our Company</p>
+    </footer>
+</body>
+</html>
